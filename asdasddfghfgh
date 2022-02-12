@@ -1,0 +1,650 @@
+
+local HelpGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local settings = Instance.new("ImageButton")
+local close = Instance.new("ImageButton")
+local menu = Instance.new("ImageButton")
+local CommandsFrame = Instance.new("ScrollingFrame")
+local UICorner_4 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Label = Instance.new("TextLabel")
+local Label_2 = Instance.new("TextLabel")
+local Label_3 = Instance.new("TextLabel")
+local Label_4 = Instance.new("TextLabel")
+local Label_5 = Instance.new("TextLabel")
+local Label_6 = Instance.new("TextLabel")
+local Label_7 = Instance.new("TextLabel")
+local Label_8 = Instance.new("TextLabel")
+local Label_9 = Instance.new("TextLabel")
+local Label_10 = Instance.new("TextLabel")
+local Label_11 = Instance.new("TextLabel")
+local Label_12 = Instance.new("TextLabel")
+local Label_13 = Instance.new("TextLabel")
+local Label_14 = Instance.new("TextLabel")
+local Label_15 = Instance.new("TextLabel")
+local Label_16 = Instance.new("TextLabel")
+local Label_17 = Instance.new("TextLabel")
+local Label_18 = Instance.new("TextLabel")
+local Label_19 = Instance.new("TextLabel")
+local Label_20 = Instance.new("TextLabel")
+local Label_21 = Instance.new("TextLabel")
+local Label_22 = Instance.new("TextLabel")
+local Label_23 = Instance.new("TextLabel")
+local Label_24 = Instance.new("TextLabel")
+local Label_25 = Instance.new("TextLabel")
+local Label_26 = Instance.new("TextLabel")
+local Label_27 = Instance.new("TextLabel")
+local Label_28 = Instance.new("TextLabel")
+local Label_29 = Instance.new("TextLabel")
+local Label_30 = Instance.new("TextLabel")
+local Label_31 = Instance.new("TextLabel")
+local Label_32 = Instance.new("TextLabel")
+local Label_33 = Instance.new("TextLabel")
+local Label_34 = Instance.new("TextLabel")
+local SettingFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local CopyGroupNameButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local CopyDcNameButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local GroupLinkLabel = Instance.new("TextLabel")
+local DiscordNameLabel = Instance.new("TextLabel")
+local CopyGroupNameButton_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+HelpGui.Name = "HelpGui"
+HelpGui.Parent = game.CoreGui
+HelpGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+HelpGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = HelpGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.BorderColor3 = Color3.fromRGB(35, 35, 35)
+MainFrame.Position = UDim2.new(0.38357079, 0, 0.382252574, 0)
+MainFrame.Size = UDim2.new(0, 332, 0, 206)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = MainFrame
+
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.Position = UDim2.new(0.00602409616, 0, 0.00970873795, 0)
+Frame.Size = UDim2.new(0, 327, 0, 202)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Frame
+
+Frame_2.Parent = MainFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Frame_2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+Frame_2.Size = UDim2.new(0, 63, 0, 206)
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Frame_2
+
+settings.Name = "settings"
+settings.Parent = MainFrame
+settings.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+settings.BackgroundTransparency = 1.000
+settings.BorderColor3 = Color3.fromRGB(27, 42, 53)
+settings.Position = UDim2.new(0.0332644582, 0, 0.791560292, 0)
+settings.Size = UDim2.new(0, 40, 0, 40)
+settings.ZIndex = 2
+settings.Image = "rbxassetid://3926307971"
+settings.ImageColor3 = Color3.fromRGB(85, 85, 85)
+settings.ImageRectOffset = Vector2.new(324, 124)
+settings.ImageRectSize = Vector2.new(36, 36)
+
+close.Name = "close"
+close.Parent = MainFrame
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.031626597, 0, 0.593689263, 0)
+close.Size = UDim2.new(0, 40, 0, 40)
+close.ZIndex = 2
+close.Image = "rbxassetid://3926305904"
+close.ImageColor3 = Color3.fromRGB(85, 85, 85)
+close.ImageRectOffset = Vector2.new(284, 4)
+close.ImageRectSize = Vector2.new(24, 24)
+
+menu.Name = "menu"
+menu.Parent = MainFrame
+menu.BackgroundTransparency = 1.000
+menu.LayoutOrder = 4
+menu.Position = UDim2.new(0.0327147841, 0, 0.0050907433, 0)
+menu.Size = UDim2.new(0, 39, 0, 39)
+menu.ZIndex = 2
+menu.Image = "rbxassetid://3926305904"
+menu.ImageColor3 = Color3.fromRGB(85, 85, 85)
+menu.ImageRectOffset = Vector2.new(604, 684)
+menu.ImageRectSize = Vector2.new(36, 36)
+
+CommandsFrame.Name = "CommandsFrame"
+CommandsFrame.Parent = MainFrame
+CommandsFrame.Active = true
+CommandsFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+CommandsFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+CommandsFrame.Position = UDim2.new(0.189759031, 0, 0.00970873795, 0)
+CommandsFrame.Size = UDim2.new(0, 266, 0, 201)
+CommandsFrame.Visible = false
+
+UICorner_4.Parent = CommandsFrame
+
+UIListLayout.Parent = CommandsFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+Label.Name = "Label"
+Label.Parent = CommandsFrame
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 999.000
+Label.Size = UDim2.new(0, 253, 0, 38)
+Label.Font = Enum.Font.GothamBlack
+Label.Text = "Commands."
+Label.TextColor3 = Color3.fromRGB(15, 15, 15)
+Label.TextSize = 40.000
+
+Label_2.Name = "Label"
+Label_2.Parent = CommandsFrame
+Label_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_2.BackgroundTransparency = 999.000
+Label_2.Size = UDim2.new(0, 253, 0, 38)
+Label_2.Font = Enum.Font.GothamSemibold
+Label_2.Text = "Fly - Fly2"
+Label_2.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_2.TextSize = 30.000
+
+Label_3.Name = "Label"
+Label_3.Parent = CommandsFrame
+Label_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_3.BackgroundTransparency = 999.000
+Label_3.Size = UDim2.new(0, 253, 0, 38)
+Label_3.Font = Enum.Font.GothamSemibold
+Label_3.Text = "Profov"
+Label_3.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_3.TextSize = 30.000
+
+Label_4.Name = "Label"
+Label_4.Parent = CommandsFrame
+Label_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_4.BackgroundTransparency = 999.000
+Label_4.Size = UDim2.new(0, 253, 0, 38)
+Label_4.Font = Enum.Font.GothamSemibold
+Label_4.Text = "Fovres"
+Label_4.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_4.TextSize = 30.000
+
+Label_5.Name = "Label"
+Label_5.Parent = CommandsFrame
+Label_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_5.BackgroundTransparency = 999.000
+Label_5.Size = UDim2.new(0, 253, 0, 38)
+Label_5.Font = Enum.Font.GothamSemibold
+Label_5.Text = "Bank"
+Label_5.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_5.TextSize = 30.000
+
+Label_6.Name = "Label"
+Label_6.Parent = CommandsFrame
+Label_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_6.BackgroundTransparency = 999.000
+Label_6.Size = UDim2.new(0, 253, 0, 38)
+Label_6.Font = Enum.Font.GothamSemibold
+Label_6.Text = "Adminbase"
+Label_6.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_6.TextSize = 30.000
+
+Label_7.Name = "Label"
+Label_7.Parent = CommandsFrame
+Label_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_7.BackgroundTransparency = 999.000
+Label_7.Size = UDim2.new(0, 253, 0, 38)
+Label_7.Font = Enum.Font.GothamSemibold
+Label_7.Text = "Rev"
+Label_7.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_7.TextSize = 30.000
+
+Label_8.Name = "Label"
+Label_8.Parent = CommandsFrame
+Label_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_8.BackgroundTransparency = 999.000
+Label_8.Size = UDim2.new(0, 253, 0, 38)
+Label_8.Font = Enum.Font.GothamSemibold
+Label_8.Text = "Db"
+Label_8.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_8.TextSize = 30.000
+
+Label_9.Name = "Label"
+Label_9.Parent = CommandsFrame
+Label_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_9.BackgroundTransparency = 999.000
+Label_9.Size = UDim2.new(0, 253, 0, 38)
+Label_9.Font = Enum.Font.GothamSemibold
+Label_9.Text = "Superıdol"
+Label_9.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_9.TextSize = 30.000
+
+Label_10.Name = "Label"
+Label_10.Parent = CommandsFrame
+Label_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_10.BackgroundTransparency = 999.000
+Label_10.Size = UDim2.new(0, 253, 0, 38)
+Label_10.Font = Enum.Font.GothamSemibold
+Label_10.Text = "Stamina"
+Label_10.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_10.TextSize = 30.000
+
+Label_11.Name = "Label"
+Label_11.Parent = CommandsFrame
+Label_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_11.BackgroundTransparency = 999.000
+Label_11.Size = UDim2.new(0, 253, 0, 38)
+Label_11.Font = Enum.Font.GothamSemibold
+Label_11.Text = "Cooldown"
+Label_11.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_11.TextSize = 30.000
+
+Label_12.Name = "Label"
+Label_12.Parent = CommandsFrame
+Label_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_12.BackgroundTransparency = 999.000
+Label_12.Size = UDim2.new(0, 253, 0, 38)
+Label_12.Font = Enum.Font.GothamSemibold
+Label_12.Text = "Chatspy"
+Label_12.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_12.TextSize = 30.000
+
+Label_13.Name = "Label"
+Label_13.Parent = CommandsFrame
+Label_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_13.BackgroundTransparency = 999.000
+Label_13.Size = UDim2.new(0, 253, 0, 38)
+Label_13.Font = Enum.Font.GothamSemibold
+Label_13.Text = "Re"
+Label_13.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_13.TextSize = 30.000
+
+Label_14.Name = "Label"
+Label_14.Parent = CommandsFrame
+Label_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_14.BackgroundTransparency = 999.000
+Label_14.Size = UDim2.new(0, 253, 0, 38)
+Label_14.Font = Enum.Font.GothamSemibold
+Label_14.Text = "Rejoin"
+Label_14.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_14.TextSize = 30.000
+
+Label_15.Name = "Label"
+Label_15.Parent = CommandsFrame
+Label_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_15.BackgroundTransparency = 999.000
+Label_15.Size = UDim2.new(0, 253, 0, 38)
+Label_15.Font = Enum.Font.GothamSemibold
+Label_15.Text = "Tptool"
+Label_15.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_15.TextSize = 30.000
+
+Label_16.Name = "Label"
+Label_16.Parent = CommandsFrame
+Label_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_16.BackgroundTransparency = 999.000
+Label_16.Size = UDim2.new(0, 253, 0, 38)
+Label_16.Font = Enum.Font.GothamSemibold
+Label_16.Text = "Infzoom"
+Label_16.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_16.TextSize = 30.000
+
+Label_17.Name = "Label"
+Label_17.Parent = CommandsFrame
+Label_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_17.BackgroundTransparency = 999.000
+Label_17.Size = UDim2.new(0, 253, 0, 38)
+Label_17.Font = Enum.Font.GothamSemibold
+Label_17.Text = "Unjail"
+Label_17.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_17.TextSize = 30.000
+
+Label_18.Name = "Label"
+Label_18.Parent = CommandsFrame
+Label_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_18.BackgroundTransparency = 999.000
+Label_18.Size = UDim2.new(0, 253, 0, 38)
+Label_18.Font = Enum.Font.GothamSemibold
+Label_18.Text = "Autofarm"
+Label_18.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_18.TextSize = 30.000
+
+Label_19.Name = "Label"
+Label_19.Parent = CommandsFrame
+Label_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_19.BackgroundTransparency = 999.000
+Label_19.Size = UDim2.new(0, 253, 0, 38)
+Label_19.Font = Enum.Font.GothamSemibold
+Label_19.Text = "Animation"
+Label_19.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_19.TextSize = 30.000
+
+Label_20.Name = "Label"
+Label_20.Parent = CommandsFrame
+Label_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_20.BackgroundTransparency = 999.000
+Label_20.Size = UDim2.new(0, 253, 0, 38)
+Label_20.Font = Enum.Font.GothamSemibold
+Label_20.Text = "Moonwalk"
+Label_20.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_20.TextSize = 30.000
+
+Label_21.Name = "Label"
+Label_21.Parent = CommandsFrame
+Label_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_21.BackgroundTransparency = 999.000
+Label_21.Size = UDim2.new(0, 253, 0, 38)
+Label_21.Font = Enum.Font.GothamSemibold
+Label_21.Text = "Autostomp"
+Label_21.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_21.TextSize = 30.000
+
+Label_22.Name = "Label"
+Label_22.Parent = CommandsFrame
+Label_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_22.BackgroundTransparency = 999.000
+Label_22.Size = UDim2.new(0, 253, 0, 38)
+Label_22.Font = Enum.Font.GothamSemibold
+Label_22.Text = "God"
+Label_22.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_22.TextSize = 30.000
+
+Label_23.Name = "Label"
+Label_23.Parent = CommandsFrame
+Label_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_23.BackgroundTransparency = 999.000
+Label_23.Size = UDim2.new(0, 253, 0, 38)
+Label_23.Font = Enum.Font.GothamSemibold
+Label_23.Text = "Gunshop"
+Label_23.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_23.TextSize = 30.000
+
+Label_24.Name = "Label"
+Label_24.Parent = CommandsFrame
+Label_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_24.BackgroundTransparency = 999.000
+Label_24.Size = UDim2.new(0, 253, 0, 38)
+Label_24.Font = Enum.Font.GothamSemibold
+Label_24.Text = "Headless"
+Label_24.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_24.TextSize = 30.000
+
+Label_25.Name = "Label"
+Label_25.Parent = CommandsFrame
+Label_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_25.BackgroundTransparency = 999.000
+Label_25.Size = UDim2.new(0, 253, 0, 38)
+Label_25.Font = Enum.Font.GothamSemibold
+Label_25.Text = "Korblox"
+Label_25.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_25.TextSize = 30.000
+
+Label_26.Name = "Label"
+Label_26.Parent = CommandsFrame
+Label_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_26.BackgroundTransparency = 999.000
+Label_26.Size = UDim2.new(0, 253, 0, 38)
+Label_26.Font = Enum.Font.GothamSemibold
+Label_26.Text = "Aimbot"
+Label_26.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_26.TextSize = 30.000
+
+Label_27.Name = "Label"
+Label_27.Parent = CommandsFrame
+Label_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_27.BackgroundTransparency = 999.000
+Label_27.Size = UDim2.new(0, 253, 0, 38)
+Label_27.Font = Enum.Font.GothamSemibold
+Label_27.Text = "Slient"
+Label_27.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_27.TextSize = 30.000
+
+Label_28.Name = "Label"
+Label_28.Parent = CommandsFrame
+Label_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_28.BackgroundTransparency = 999.000
+Label_28.Size = UDim2.new(0, 253, 0, 38)
+Label_28.Font = Enum.Font.GothamSemibold
+Label_28.Text = "Noslow"
+Label_28.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_28.TextSize = 30.000
+
+Label_29.Name = "Label"
+Label_29.Parent = CommandsFrame
+Label_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_29.BackgroundTransparency = 999.000
+Label_29.Size = UDim2.new(0, 253, 0, 38)
+Label_29.Font = Enum.Font.GothamSemibold
+Label_29.Text = "Antikill"
+Label_29.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_29.TextSize = 30.000
+
+Label_30.Name = "Label"
+Label_30.Parent = CommandsFrame
+Label_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_30.BackgroundTransparency = 999.000
+Label_30.Size = UDim2.new(0, 253, 0, 38)
+Label_30.Font = Enum.Font.GothamSemibold
+Label_30.Text = "Antiafk"
+Label_30.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_30.TextSize = 30.000
+
+Label_31.Name = "Label"
+Label_31.Parent = CommandsFrame
+Label_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_31.BackgroundTransparency = 999.000
+Label_31.Size = UDim2.new(0, 253, 0, 38)
+Label_31.Font = Enum.Font.GothamSemibold
+Label_31.Text = "Superuman"
+Label_31.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_31.TextSize = 30.000
+
+Label_32.Name = "Label"
+Label_32.Parent = CommandsFrame
+Label_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_32.BackgroundTransparency = 999.000
+Label_32.Size = UDim2.new(0, 253, 0, 38)
+Label_32.Font = Enum.Font.GothamSemibold
+Label_32.Text = "Infjump"
+Label_32.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_32.TextSize = 30.000
+
+Label_33.Name = "Label"
+Label_33.Parent = CommandsFrame
+Label_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_33.BackgroundTransparency = 999.000
+Label_33.Size = UDim2.new(0, 253, 0, 38)
+Label_33.Font = Enum.Font.GothamSemibold
+Label_33.Text = "Esp"
+Label_33.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_33.TextSize = 30.000
+
+Label_34.Name = "Label"
+Label_34.Parent = CommandsFrame
+Label_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label_34.BackgroundTransparency = 999.000
+Label_34.Size = UDim2.new(0, 253, 0, 38)
+Label_34.Font = Enum.Font.GothamSemibold
+Label_34.Text = "Esp2"
+Label_34.TextColor3 = Color3.fromRGB(21, 21, 21)
+Label_34.TextSize = 30.000
+
+SettingFrame.Name = "SettingFrame"
+SettingFrame.Parent = MainFrame
+SettingFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+SettingFrame.BorderColor3 = Color3.fromRGB(45, 45, 45)
+SettingFrame.Position = UDim2.new(0.189759031, 0, 0.00970873795, 0)
+SettingFrame.Size = UDim2.new(0, 266, 0, 201)
+SettingFrame.Visible = false
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = SettingFrame
+
+CopyGroupNameButton.Name = "CopyGroupNameButton"
+CopyGroupNameButton.Parent = SettingFrame
+CopyGroupNameButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CopyGroupNameButton.BackgroundTransparency = 99.000
+CopyGroupNameButton.Position = UDim2.new(-0.002830863, 0, 0.544607043, 0)
+CopyGroupNameButton.Size = UDim2.new(0, 266, 0, 50)
+CopyGroupNameButton.Font = Enum.Font.GothamBold
+CopyGroupNameButton.Text = "Copy Group Link"
+CopyGroupNameButton.TextColor3 = Color3.fromRGB(13, 13, 13)
+CopyGroupNameButton.TextSize = 25.000
+
+UICorner_6.CornerRadius = UDim.new(0, 10)
+UICorner_6.Parent = CopyGroupNameButton
+
+CopyDcNameButton.Name = "CopyDcNameButton"
+CopyDcNameButton.Parent = SettingFrame
+CopyDcNameButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CopyDcNameButton.BackgroundTransparency = 99.000
+CopyDcNameButton.Position = UDim2.new(-0.00115507841, 0, 0.750809073, 0)
+CopyDcNameButton.Size = UDim2.new(0, 266, 0, 50)
+CopyDcNameButton.Font = Enum.Font.GothamBold
+CopyDcNameButton.Text = "Copy Discord Name"
+CopyDcNameButton.TextColor3 = Color3.fromRGB(13, 13, 13)
+CopyDcNameButton.TextSize = 25.000
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = CopyDcNameButton
+
+GroupLinkLabel.Name = "GroupLinkLabel"
+GroupLinkLabel.Parent = SettingFrame
+GroupLinkLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GroupLinkLabel.Position = UDim2.new(1.19277108, 0, -0.567961156, 0)
+GroupLinkLabel.Size = UDim2.new(0, 200, 0, 50)
+GroupLinkLabel.Visible = false
+GroupLinkLabel.Font = Enum.Font.SourceSans
+GroupLinkLabel.Text = "https://www.roblox.com/groups/13996238/W4LLSH#!/about"
+GroupLinkLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+GroupLinkLabel.TextSize = 14.000
+
+DiscordNameLabel.Name = "DiscordNameLabel"
+DiscordNameLabel.Parent = SettingFrame
+DiscordNameLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordNameLabel.Position = UDim2.new(1.19277108, 0, -0.567961156, 0)
+DiscordNameLabel.Size = UDim2.new(0, 200, 0, 50)
+DiscordNameLabel.Visible = false
+DiscordNameLabel.Font = Enum.Font.SourceSans
+DiscordNameLabel.Text = "https://www.roblox.com/groups/13996238/W4LLSH#!/about"
+DiscordNameLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordNameLabel.TextSize = 14.000
+
+CopyGroupNameButton_2.Name = "CopyGroupNameButton"
+CopyGroupNameButton_2.Parent = SettingFrame
+CopyGroupNameButton_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+CopyGroupNameButton_2.BackgroundTransparency = 99.000
+CopyGroupNameButton_2.Position = UDim2.new(-0.002830863, 0, 0.186398089, 0)
+CopyGroupNameButton_2.Size = UDim2.new(0, 266, 0, 50)
+CopyGroupNameButton_2.Font = Enum.Font.GothamBold
+CopyGroupNameButton_2.Text = "v1.2b"
+CopyGroupNameButton_2.TextColor3 = Color3.fromRGB(13, 13, 13)
+CopyGroupNameButton_2.TextSize = 50.000
+
+UICorner_8.CornerRadius = UDim.new(0, 10)
+UICorner_8.Parent = CopyGroupNameButton_2
+
+-- Scripts:
+
+local function ZDCYXR_fake_script() -- MainFrame.DraggableScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.18
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ZDCYXR_fake_script)()
+local function GRJISTG_fake_script() -- settings.LocalScript 
+	local script = Instance.new('LocalScript', settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.SettingFrame.Visible = not script.Parent.Parent.SettingFrame.Visible
+	end)
+	
+end
+coroutine.wrap(GRJISTG_fake_script)()
+local function DCRGN_fake_script() -- close.Script 
+	local script = Instance.new('Script', close)
+
+	local function OnClicked()
+	   script.Parent.Parent:Remove()
+	end
+	
+	script.Parent.MouseButton1Click:connect(OnClicked)
+end
+coroutine.wrap(DCRGN_fake_script)()
+local function MTBGIXZ_fake_script() -- menu.LocalScript 
+	local script = Instance.new('LocalScript', menu)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CommandsFrame.Visible = not script.Parent.Parent.CommandsFrame.Visible
+	end)
+	
+end
+coroutine.wrap(MTBGIXZ_fake_script)()
+local function JCLRX_fake_script() -- CopyGroupNameButton.CopyScript 
+	local script = Instance.new('LocalScript', CopyGroupNameButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.GroupLinkLabel.Text)
+	end)
+end
+coroutine.wrap(JCLRX_fake_script)()
+local function SQAUPKH_fake_script() -- CopyDcNameButton.CopyScript 
+	local script = Instance.new('LocalScript', CopyDcNameButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.DiscordNameLabel.Text)
+	end)
+end
+coroutine.wrap(SQAUPKH_fake_script)()
+local function UGVEY_fake_script() -- CopyGroupNameButton_2.CopyScript 
+	local script = Instance.new('LocalScript', CopyGroupNameButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard(script.Parent.Parent.GroupLinkLabel.Text)
+	end)
+end
+coroutine.wrap(UGVEY_fake_script)()
